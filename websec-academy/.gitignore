@@ -1,0 +1,75 @@
+# ---------------------------------------------------------------
+# Burp Suite artifacts — the highest-risk category.
+# A Burp project holds your ENTIRE proxy history: every site you
+# browsed with Burp running, cookies, session tokens, logins.
+# ---------------------------------------------------------------
+*.burp
+*.burpstate
+burp/
+*.har
+*.pcap
+*.saz
+
+
+# ---------------------------------------------------------------
+# Secrets. Nothing here should ever reach a remote repo.
+# ---------------------------------------------------------------
+.env
+.env.*
+*.env
+secrets/
+credentials.json
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+
+
+# ---------------------------------------------------------------
+# Private scratch space — raw output, half-thoughts, anything
+# not yet cleaned up. Put messy work HERE instead of outside
+# the repo, so it never gets staged by accident.
+# ---------------------------------------------------------------
+scratch/
+loot/
+private/
+*.private.md
+*.local.md
+
+
+# ---------------------------------------------------------------
+# Python build artifacts — for tools/
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+
+# ---------------------------------------------------------------
+# Editor and OS clutter
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# ---------------------------------------------------------------
+# Bulk files that bloat the repo without proving anything
+# ---------------------------------------------------------------
+wordlists/
+*.zip
+*.tar.gz
+*.7z
